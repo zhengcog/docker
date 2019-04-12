@@ -1,0 +1,5 @@
+version: '3'
+services:
+  php_7_3_3_3-centos7:
+    build: ./
+    container_name: php_7_3_3_3-centos7

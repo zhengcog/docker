@@ -7,7 +7,7 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 RUN yum clean all; \
 	yum update -y; \
-	yum install wget git -y; \
+	yum install gcc gcc-c++ wget git -y; \
 	yum clean all && yum update -y; \
 	wget -O go.tgz "https://dl.google.com/go/go$GOLANG_VERSION.linux-amd64.tar.gz"; \
 	tar -C /usr/local -xzf go.tgz; \
